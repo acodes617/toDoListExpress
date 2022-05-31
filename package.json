@@ -1,0 +1,27 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "To do list with express and server",
+  "main": "todolist.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acodes617/To-Do-List.git"
+  },
+  "author": "Alex Docanto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acodes617/To-Do-List/issues"
+  },
+  "homepage": "https://github.com/acodes617/To-Do-List#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0",
+    "node": "^17.7.2",
+    "react": "^18.1.0"
+  }
+}

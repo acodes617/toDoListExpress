@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="./style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+
+    <form action="/addTask" method="post">
+        <input id="inputBox" type="text" placeholder="Write Tasks Here..." name="task" class ="inputbox">
+        <button id="btnOne" type="submit" class ="btn1">Add To List</button>
+    </form>
+    
+    <section>
+    <ul id="unList" class = "unlist">
+
+        <% for(var i=0; i<tasks.length; i++) {%>
+            <% let lineThrough = tasks[i].completed ? 'line-through' : 'none' %>
+            <li >
+              <span style='text-decoration: <%= lineThrough %> '><%= tasks[i].task %></span>
+              <span class="complete"> &#x2714 </span>
+            </li>
+          <% } %>
+
+    </ul>
+    </section>
+
+    <form>
+        <button class = "delete" id = "btnTwo">Clear All</button>
+    </form>
+
+    <script src = "main.js"></script>
+
+
+</body>
+</html>
+
+
+
